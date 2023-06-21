@@ -92,7 +92,7 @@ async def process_page_press(callback: CallbackQuery):
     users_db[callback.from_user.id]['bookmarks'].add(
         users_db[callback.from_user.id]['page']
     )
-    await callback.answer('Страница добавлена в закладки!')
+    await callback.answer('页面已添加到书签！')
 
 
 async def process_bookmark_press(callback: CallbackQuery):
