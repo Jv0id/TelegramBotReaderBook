@@ -1,8 +1,9 @@
 # TelegramBotReaderBook
 A telegram bot book reader. 
 
-目前仅支持`txt`和`epub`的图书
-Currently, only books in `txt` and `epub` format are supported.
+>目前仅支持`txt`和`epub`的图书
+
+>only books in `txt` and `epub` format are supported.
 
 ## how to run
 ### docker
