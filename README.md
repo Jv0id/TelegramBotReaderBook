@@ -1,6 +1,8 @@
 # TelegramBotReaderBook
 A telegram bot book reader. 
 
+目前仅支持txt和epub的图书
+
 ## how to run
 ### docker
 
