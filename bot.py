@@ -8,8 +8,8 @@ from handlers.other_handlers import register_echo_handler
 from handlers.user_handlers import register_user_handlers
 from keyboards.main_menu import set_main_menu
 
-
 logger = logging.getLogger(__name__)
+
 
 def register_all_handlers(dp: Dispatcher) -> None:
     register_user_handlers(dp)

@@ -150,4 +150,3 @@ def register_user_handlers(dp: Dispatcher):
     dp.register_callback_query_handler(process_cancel_press, text='cancel')
     dp.register_callback_query_handler(process_del_bookmark_press,
                                        lambda x: 'del' in x.data and x.data[:-3].isdigit())
-
