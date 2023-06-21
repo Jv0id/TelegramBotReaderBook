@@ -1,7 +1,7 @@
 import os
 
 BOOK_PATH = os.environ.get("BOOK_PATH") or "book/three-body.txt"
-PAGE_SIZE = os.environ.get("PAGE_SIZE") or 500
+PAGE_SIZE = os.environ.get("PAGE_SIZE") or "500"
 
 book: dict[int, str] = {}
 
@@ -25,10 +25,10 @@ def _get_part_text(text: str, start: int, size: int) -> tuple[str, int]:
 def prepare_book(path: str) -> None:
     with open(path, 'r') as r:
         text = r.read()
-        pages = len(text) // PAGE_SIZE + 1
+        pages = len(text) // (int(PAGE_SIZE)) + 1
         start = 0
         for page_num in range(1, pages + 1):
-            page_text, page_length = _get_part_text(text, start, PAGE_SIZE)
+            page_text, page_length = _get_part_text(text, start, int(PAGE_SIZE))
             book[page_num] = page_text.lstrip()
             start += page_length
 
