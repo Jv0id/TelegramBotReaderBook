@@ -11,7 +11,7 @@ docker run -d --name telegram-reader-bot -e BOT_TOKEN="" -e ADMIN_ID="" -e BOOK_
 ```
 
 ## TODO
-- add docker-compose
+- add docker-compose 　✔️
 - more book type
 
 forked from https://github.com/DmitryDruzh/TelegramBotReaderBook
