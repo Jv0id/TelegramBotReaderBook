@@ -5,9 +5,11 @@ services:
     image: jp0id/telegram-reader-bot
     restart: always
     volumes:
+      # 需要把你要阅读小说的全路径填写上，冒号两边的路径要一致
       - /root/books/yourbook.txt:/root/books/yourbook.txt
     environment:
       BOT_TOKEN: 12
       ADMIN_ID: 123
+      # 和上面的小说文件的路径一样
       BOOK_PATH: /root/books/yourbook.txt
       PAGE_SIZE: 500
